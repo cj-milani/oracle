@@ -6,7 +6,8 @@ import java.util.*;
  */
 
 public class oracle {
-
+    public static final String OPEN = "       _____  _____";
+    public static final String CLOSED = "       ____________";
     public static void main (String[] args) {
         int line1;
         int line2;
@@ -174,273 +175,272 @@ public class oracle {
 
     public static String drawLine (int line) {
         String line_;
-
         if (line == 0 || line == 2) {
-            System.out.println("_____  _____");
-            line_ = "_____  _____";
+            System.out.println(OPEN);
+            line_ = OPEN;
         }
         else {
-            System.out.println("____________");
-            line_ = "____________";
+            System.out.println(CLOSED);
+            line_ = CLOSED;
         }
         return line_;
     }
 
     public static void hexagram (String s) {
-        if (s.equals("____________" + "____________" + "____________" +
-            "____________" + "____________" + "____________")) {
-                System.out.println("01 • The Dynamic");
+        if (s.equals(CLOSED + CLOSED + CLOSED +
+            CLOSED + CLOSED + CLOSED)) {
+                System.out.println("    01 • The Dynamic");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "_____  _____" +
-            "_____  _____" + "_____  _____" + "_____  _____")) {
-            System.out.println("02 • The Magnetic");
+        else if (s.equals(OPEN + OPEN + OPEN +
+            OPEN + OPEN + OPEN)) {
+            System.out.println("    02 • The Magnetic");
         }
-        else if (s.equals("____________" + "_____  _____" + "_____  _____" +
-            "_____  _____" + "____________" + "_____  _____")) {
-            System.out.println("03 • Difficulty");
+        else if (s.equals(CLOSED + OPEN + OPEN +
+            OPEN + CLOSED + OPEN)) {
+            System.out.println("    03 • Difficulty");
         }
-        else if (s.equals("_____  _____" + "____________" + "_____  _____" +
-            "_____  _____" + "_____  _____" + "____________")) {
-            System.out.println("04 • Inexperience");
+        else if (s.equals(OPEN + CLOSED + OPEN +
+            OPEN + OPEN + CLOSED)) {
+            System.out.println("    04 • Inexperience");
         }
-        else if (s.equals("____________" + "____________" + "____________" +
-            "_____  _____" + "____________" + "_____  _____")) {
-            System.out.println("05 • Waiting");
+        else if (s.equals(CLOSED + CLOSED + CLOSED +
+            OPEN + CLOSED + OPEN)) {
+            System.out.println("    05 • Waiting");
         }
-        else if (s.equals("_____  _____" + "____________" + "_____  _____" +
-            "____________" + "____________" + "____________")) {
-            System.out.println("06 • Stress");
+        else if (s.equals(OPEN + CLOSED + OPEN +
+            CLOSED + CLOSED + CLOSED)) {
+            System.out.println("    06 • Stress");
         }
-        else if (s.equals("_____  _____" + "____________" + "_____  _____" +
-            "_____  _____" + "_____  _____" + "_____  _____")) {
-            System.out.println("07 • Discipline");
+        else if (s.equals(OPEN + CLOSED + OPEN +
+            OPEN + OPEN + OPEN)) {
+            System.out.println("    07 • Discipline");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "_____  _____" +
-            "_____  _____" + "____________" + "_____  _____")) {
-            System.out.println("08 • Holding Together");
+        else if (s.equals(OPEN + OPEN + OPEN +
+            OPEN + CLOSED + OPEN)) {
+            System.out.println("    08 • Holding Together");
         }
-        else if (s.equals("____________" + "____________" + "____________" +
-            "_____  _____" + "____________" + "____________")) {
-            System.out.println("09 • Passive Restraint");
+        else if (s.equals(CLOSED + CLOSED + CLOSED +
+            OPEN + CLOSED + CLOSED)) {
+            System.out.println("    09 • Passive Restraint");
         }
-        else if (s.equals("____________" + "____________" + "_____  _____" +
-            "____________" + "____________" + "____________")) {
-            System.out.println("10 • Cautious Advance");
+        else if (s.equals(CLOSED + CLOSED + OPEN +
+            CLOSED + CLOSED + CLOSED)) {
+            System.out.println("    10 • Cautious Advance");
         }
-        else if (s.equals("____________" + "____________" + "____________" +
-            "_____  _____" + "_____  _____" + "_____  _____")) {
-            System.out.println("11 • Harmony");
+        else if (s.equals(CLOSED + CLOSED + CLOSED +
+            OPEN + OPEN + OPEN)) {
+            System.out.println("    11 • Harmony");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "_____  _____" +
-            "____________" + "____________" + "____________")) {
-            System.out.println("12 • Divorcement");
+        else if (s.equals(OPEN + OPEN + OPEN +
+            CLOSED + CLOSED + CLOSED)) {
+            System.out.println("    12 • Divorcement");
         }
-        else if (s.equals("____________" + "_____  _____" + "____________" +
-            "____________" + "____________" + "____________")) {
-            System.out.println("13 • Union of Forces");
+        else if (s.equals(CLOSED + OPEN + CLOSED +
+            CLOSED + CLOSED + CLOSED)) {
+            System.out.println("    13 • Union of Forces");
         }
-        else if (s.equals("____________" + "____________" + "____________" +
-            "____________" + "_____  _____" + "____________")) {
-            System.out.println("14 • Wealth");
+        else if (s.equals(CLOSED + CLOSED + CLOSED +
+            CLOSED + OPEN + CLOSED)) {
+            System.out.println("    14 • Wealth");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "____________" +
-            "_____  _____" + "_____  _____" + "_____  _____")) {
-            System.out.println("15 • Temperance");
+        else if (s.equals(OPEN + OPEN + CLOSED +
+            OPEN + OPEN + OPEN)) {
+            System.out.println("    15 • Temperance");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "_____  _____" +
-            "____________" + "_____  _____" + "_____  _____")) {
-            System.out.println("16 • Enthusiasm/Self-Deception/Repose");
+        else if (s.equals(OPEN + OPEN + OPEN +
+            CLOSED + OPEN + OPEN)) {
+            System.out.println("    16 • Enthusiasm/Self-Deception/Repose");
         }
-        else if (s.equals("____________" + "_____  _____" + "_____  _____" +
-            "____________" + "____________" + "_____  _____")) {
-            System.out.println("17 • Following");
+        else if (s.equals(CLOSED + OPEN + OPEN +
+            CLOSED + CLOSED + OPEN)) {
+            System.out.println("    17 • Following");
         }
-        else if (s.equals("_____  _____" + "____________" + "____________" +
-            "_____  _____" + "_____  _____" + "____________")) {
-            System.out.println("18 • Repair");
+        else if (s.equals(OPEN + CLOSED + CLOSED +
+            OPEN + OPEN + CLOSED)) {
+            System.out.println("    18 • Repair");
         }
-        else if (s.equals("____________" + "____________" + "_____  _____" +
-            "_____  _____" + "_____  _____" + "_____  _____")) {
-            System.out.println("19 • Approach");
+        else if (s.equals(CLOSED + CLOSED + OPEN +
+            OPEN + OPEN + OPEN)) {
+            System.out.println("    19 • Approach");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "_____  _____" +
-            "_____  _____" + "____________" + "____________")) {
-            System.out.println("20 • Contemplation");
+        else if (s.equals(OPEN + OPEN + OPEN +
+            OPEN + CLOSED + CLOSED)) {
+            System.out.println("    20 • Contemplation");
         }
-        else if (s.equals("____________" + "_____  _____" + "_____  _____" +
-            "____________" + "_____  _____" + "____________")) {
-            System.out.println("21 • Discernment");
+        else if (s.equals(CLOSED + OPEN + OPEN +
+            CLOSED + OPEN + CLOSED)) {
+            System.out.println("    21 • Discernment");
         }
-        else if (s.equals("____________" + "_____  _____" + "____________" +
-            "_____  _____" + "_____  _____" + "____________")) {
-            System.out.println("22 • Persona");
+        else if (s.equals(CLOSED + OPEN + CLOSED +
+            OPEN + OPEN + CLOSED)) {
+            System.out.println("    22 • Persona");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "_____  _____" +
-            "_____  _____" + "_____  _____" + "____________")) {
-            System.out.println("23 • Disintegration");
+        else if (s.equals(OPEN + OPEN + OPEN +
+            OPEN + OPEN + CLOSED)) {
+            System.out.println("    23 • Disintegration");
         }
-        else if (s.equals("____________" + "_____  _____" + "_____  _____" +
-            "_____  _____" + "_____  _____" + "_____  _____")) {
-            System.out.println("24 • Return");
+        else if (s.equals(CLOSED + OPEN + OPEN +
+            OPEN + OPEN + OPEN)) {
+            System.out.println("    24 • Return");
         }
-        else if (s.equals("____________" + "_____  _____" + "_____  _____" +
-            "____________" + "____________" + "____________")) {
-            System.out.println("25 • Innocence");
+        else if (s.equals(CLOSED + OPEN + OPEN +
+            CLOSED + CLOSED + CLOSED)) {
+            System.out.println("    25 • Innocence");
         }
-        else if (s.equals("____________" + "____________" + "____________" +
-            "_____  _____" + "_____  _____" + "____________")) {
-            System.out.println("26 • Controlled Power");
+        else if (s.equals(CLOSED + CLOSED + CLOSED +
+            OPEN + OPEN + CLOSED)) {
+            System.out.println("    26 • Controlled Power");
         }
-        else if (s.equals("____________" + "_____  _____" + "_____  _____" +
-            "_____  _____" + "_____  _____" + "____________")) {
-            System.out.println("27 • Nourishment");
+        else if (s.equals(CLOSED + OPEN + OPEN +
+            OPEN + OPEN + CLOSED)) {
+            System.out.println("    27 • Nourishment");
         }
-        else if (s.equals("_____  _____" + "____________" + "____________" +
-            "____________" + "____________" + "_____  _____")) {
-            System.out.println("28 • Critical Mass");
+        else if (s.equals(OPEN + CLOSED + CLOSED +
+            CLOSED + CLOSED + OPEN)) {
+            System.out.println("    28 • Critical Mass");
         }
-        else if (s.equals("_____  _____" + "____________" + "_____  _____" +
-            "_____  _____" + "____________" + "_____  _____")) {
-            System.out.println("29 • Danger");
+        else if (s.equals(OPEN + CLOSED + OPEN +
+            OPEN + CLOSED + OPEN)) {
+            System.out.println("    29 • Danger");
         }
-        else if (s.equals("____________" + "_____  _____" + "____________" +
-            "____________" + "_____  _____" + "____________")) {
-            System.out.println("30 • Clarity");
+        else if (s.equals(CLOSED + OPEN + CLOSED +
+            CLOSED + OPEN + CLOSED)) {
+            System.out.println("    30 • Clarity");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "____________" +
-            "____________" + "____________" + "_____  _____")) {
-            System.out.println("31 • Initiative (Influence)");
+        else if (s.equals(OPEN + OPEN + CLOSED +
+            CLOSED + CLOSED + OPEN)) {
+            System.out.println("    31 • Initiative (Influence)");
         }
-        else if (s.equals("_____  _____" + "____________" + "____________" +
-            "____________" + "_____  _____" + "_____  _____")){
-            System.out.println("32 • Consistency");
+        else if (s.equals(OPEN + CLOSED + CLOSED +
+            CLOSED + OPEN + OPEN)){
+            System.out.println("    32 • Consistency");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "____________" +
-            "____________" + "____________" + "____________")) {
-            System.out.println("33 • Retreat");
+        else if (s.equals(OPEN + OPEN + CLOSED +
+            CLOSED + CLOSED + CLOSED)) {
+            System.out.println("    33 • Retreat");
         }
-        else if (s.equals("____________" + "____________" + "____________" +
-            "____________" + "_____  _____" + "_____  _____")) {
-            System.out.println("34 • Great Power");
+        else if (s.equals(CLOSED + CLOSED + CLOSED +
+            CLOSED + OPEN + OPEN)) {
+            System.out.println("    34 • Great Power");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "_____  _____" +
-            "____________" + "_____  _____" + "____________")) {
-            System.out.println("35 • Advance of Consciousness");
+        else if (s.equals(OPEN + OPEN + OPEN +
+            CLOSED + OPEN + CLOSED)) {
+            System.out.println("    35 • Advance of Consciousness");
         }
-        else if (s.equals("____________" + "_____  _____" + "____________" +
-            "_____  _____" + "_____  _____" + "_____  _____")) {
-            System.out.println("36 • Clouded Perception");
+        else if (s.equals(CLOSED + OPEN + CLOSED +
+            OPEN + OPEN + OPEN)) {
+            System.out.println("    36 • Clouded Perception");
         }
-        else if (s.equals("____________" + "_____  _____" + "____________" +
-            "_____  _____" + "____________" + "____________")) {
-            System.out.println("37 • The Family");
+        else if (s.equals(CLOSED + OPEN + CLOSED +
+            OPEN + CLOSED + CLOSED)) {
+            System.out.println("    37 • The Family");
         }
-        else if (s.equals("____________" + "____________" + "_____  _____" +
-            "____________" + "_____  _____" + "____________")) {
-            System.out.println("38 • Mutual Alienation");
+        else if (s.equals(CLOSED + CLOSED + OPEN +
+            CLOSED + OPEN + CLOSED)) {
+            System.out.println("    38 • Mutual Alienation");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "____________" +
-            "_____  _____" + "____________" + "_____  _____")) {
-            System.out.println("39 • Impasse");
+        else if (s.equals(OPEN + OPEN + CLOSED +
+            OPEN + CLOSED + OPEN)) {
+            System.out.println("    39 • Impasse");
         }
-        else if (s.equals("_____  _____" + "____________" + "_____  _____" +
-            "____________" + "_____  _____" + "_____  _____")) {
-            System.out.println("40 • Liberation");
+        else if (s.equals(OPEN + CLOSED + OPEN +
+            CLOSED + OPEN + OPEN)) {
+            System.out.println("    40 • Liberation");
         }
-        else if (s.equals("____________" + "____________" + "_____  _____" +
-            "_____  _____" + "_____  _____" + "____________")) {
-            System.out.println("41 • Compensating Sacrifice");
+        else if (s.equals(CLOSED + CLOSED + OPEN +
+            OPEN + OPEN + CLOSED)) {
+            System.out.println("    41 • Compensating Sacrifice");
         }
-        else if (s.equals("____________" + "_____  _____" + "_____  _____" +
-            "_____  _____" + "____________" + "____________")) {
-            System.out.println("42 • Increase");
+        else if (s.equals(CLOSED + OPEN + OPEN +
+            OPEN + CLOSED + CLOSED)) {
+            System.out.println("    42 • Increase");
         }
-        else if (s.equals("____________" + "____________" + "____________" +
-            "____________" + "____________" + "_____  _____")) {
-            System.out.println("43 • Resoluteness");
+        else if (s.equals(CLOSED + CLOSED + CLOSED +
+            CLOSED + CLOSED + OPEN)) {
+            System.out.println("    43 • Resoluteness");
         }
-        else if (s.equals("_____  _____" + "____________" + "____________" +
-            "____________" + "____________" + "____________")) {
-            System.out.println("44 • Temptation");
+        else if (s.equals(OPEN + CLOSED + CLOSED +
+            CLOSED + CLOSED + CLOSED)) {
+            System.out.println("    44 • Temptation");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "_____  _____" +
-            "____________" + "____________" + "_____  _____")) {
-            System.out.println("45 • Gathering Together (Contraction)");
+        else if (s.equals(OPEN + OPEN + OPEN +
+            CLOSED + CLOSED + OPEN)) {
+            System.out.println("    45 • Gathering Together (Contraction)");
         }
-        else if (s.equals("_____  _____" + "____________" + "____________" +
-            "_____  _____" + "_____  _____" + "_____  _____")) {
-            System.out.println("46 • Pushing Upward");
+        else if (s.equals(OPEN + CLOSED + CLOSED +
+            OPEN + OPEN + OPEN)) {
+            System.out.println("    46 • Pushing Upward");
         }
-        else if (s.equals("_____  _____" + "____________" + "_____  _____" +
-            "____________" + "____________" + "_____  _____")) {
-            System.out.println("47 • Oppression");
+        else if (s.equals(OPEN + CLOSED + OPEN +
+            CLOSED + CLOSED + OPEN)) {
+            System.out.println("    47 • Oppression");
         }
-        else if (s.equals("_____  _____" + "____________" + "____________" +
-            "_____  _____" + "____________" + "_____  _____")) {
-            System.out.println("48 • The Well");
+        else if (s.equals(OPEN + CLOSED + CLOSED +
+            OPEN + CLOSED + OPEN)) {
+            System.out.println("    48 • The Well");
         }
-        else if (s.equals("____________" + "_____  _____" + "____________" +
-            "____________" + "____________" + "_____  _____")) {
-            System.out.println("49 • Metamorphosis");
+        else if (s.equals(CLOSED + OPEN + CLOSED +
+            CLOSED + CLOSED + OPEN)) {
+            System.out.println("    49 • Metamorphosis");
         }
-        else if (s.equals("_____  _____" + "____________" + "____________" +
-            "____________" + "_____  _____" + "____________")) {
-            System.out.println("50 • The Sacrificial Vessel");
+        else if (s.equals(OPEN + CLOSED + CLOSED +
+            CLOSED + OPEN + CLOSED)) {
+            System.out.println("    50 • The Sacrificial Vessel");
         }
-        else if (s.equals("____________" + "_____  _____" + "_____  _____" +
-            "____________" + "_____  _____" + "_____  _____")) {
-            System.out.println("51 • Shock/Thunder");
+        else if (s.equals(CLOSED + OPEN + OPEN +
+            CLOSED + OPEN + OPEN)) {
+            System.out.println("    51 • Shock/Thunder");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "____________" +
-            "_____  _____" + "_____  _____" + "____________")) {
-            System.out.println("52 • Keeping Still");
+        else if (s.equals(OPEN + OPEN + CLOSED +
+            OPEN + OPEN + CLOSED)) {
+            System.out.println("    52 • Keeping Still");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "____________" +
-            "_____  _____" + "____________" + "____________")) {
-            System.out.println("53 • Gradual Progress");
+        else if (s.equals(OPEN + OPEN + CLOSED +
+            OPEN + CLOSED + CLOSED)) {
+            System.out.println("    53 • Gradual Progress");
         }
-        else if (s.equals("____________" + "____________" + "_____  _____" +
-            "____________" + "_____  _____" + "_____  _____")) {
-            System.out.println("54 • Propriety/Making-Do");
+        else if (s.equals(CLOSED + CLOSED + OPEN +
+            CLOSED + OPEN + OPEN)) {
+            System.out.println("    54 • Propriety/Making-Do");
         }
-        else if (s.equals("____________" + "_____  _____" + "____________" +
-            "____________" + "_____  _____" + "_____  _____")) {
-            System.out.println("55 • Abundance (Expansion of Awareness)");
+        else if (s.equals(CLOSED + OPEN + CLOSED +
+            CLOSED + OPEN + OPEN)) {
+            System.out.println("    55 • Abundance (Expansion of Awareness)");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "____________" +
-            "____________" + "_____  _____" + "____________")) {
-            System.out.println("56 • Transition");
+        else if (s.equals(OPEN + OPEN + CLOSED +
+            CLOSED + OPEN + CLOSED)) {
+            System.out.println("    56 • Transition");
         }
-        else if (s.equals("_____  _____" + "____________" + "____________" +
-            "_____  _____" + "____________" + "____________")) {
-            System.out.println("57 • Penetration");
+        else if (s.equals(OPEN + CLOSED + CLOSED +
+            OPEN + CLOSED + CLOSED)) {
+            System.out.println("    57 • Penetration");
         }
-        else if (s.equals("____________" + "____________" + "_____  _____" +
-            "____________" + "____________" + "_____  _____")) {
-            System.out.println("58 • Joy (Self-indulgence)");
+        else if (s.equals(CLOSED + CLOSED + OPEN +
+            CLOSED + CLOSED + OPEN)) {
+            System.out.println("    58 • Joy (Self-indulgence)");
         }
-        else if (s.equals("_____  _____" + "____________" + "_____  _____" +
-            "_____  _____" + "____________" + "____________")) {
-            System.out.println("59 • Expansion (Dispersion)");
+        else if (s.equals(OPEN + CLOSED + OPEN +
+            OPEN + CLOSED + CLOSED)) {
+            System.out.println("    59 • Expansion (Dispersion)");
         }
-        else if (s.equals("____________" + "____________" + "_____  _____" +
-            "_____  _____" + "____________" + "_____  _____")) {
-            System.out.println("60 • Restrictive Regulations");
+        else if (s.equals(CLOSED + CLOSED + OPEN +
+            OPEN + CLOSED + OPEN)) {
+            System.out.println("    60 • Restrictive Regulations");
         }
-        else if (s.equals("____________" + "____________" + "_____  _____" +
-            "_____  _____" + "____________" + "____________")) {
-            System.out.println("61 • Inner Truth");
+        else if (s.equals(CLOSED + CLOSED + OPEN +
+            OPEN + CLOSED + CLOSED)) {
+            System.out.println("    61 • Inner Truth");
         }
-        else if (s.equals("_____  _____" + "_____  _____" + "____________" +
-            "____________" + "_____  _____" + "_____  _____")) {
-            System.out.println("62 • Small Powers");
+        else if (s.equals(OPEN + OPEN + CLOSED +
+            CLOSED + OPEN + OPEN)) {
+            System.out.println("    62 • Small Powers");
         }
-        else if (s.equals("____________" + "_____  _____" + "____________" +
-            "_____  _____" + "____________" + "_____  _____")) {
-            System.out.println("63 • Completion");
+        else if (s.equals(CLOSED + OPEN + CLOSED +
+            OPEN + CLOSED + OPEN)) {
+            System.out.println("    63 • Completion");
         }
         else {
-            System.out.println("64 • Unfinished Business");
+            System.out.println("    64 • Unfinished Business");
         }
     }
 }
