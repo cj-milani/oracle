@@ -1,5 +1,5 @@
 # oracle
-I-Ching fortune finder
+I Ching fortune finder
 
 A simple command-line application for getting a quick I-Ching fortune.
 
